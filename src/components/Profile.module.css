@@ -1,0 +1,105 @@
+.profile {
+    width: 100%;
+    max-width: 240px;        
+    margin: 0 auto;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    overflow: hidden;
+    font-family: sans-serif;
+    background-color: #fff;
+    text-align: center;
+    box-sizing: border-box;
+  }
+  
+  
+  .description {
+    padding: 20px;
+  }
+  
+  .avatar {
+    width: 100px;
+    border-radius: 50%;
+    background-color: #f0f0f0;
+  }
+  
+  .name {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 12px 0 6px;
+  }
+  
+  .tag {
+    color: gray;
+    font-size: 14px;
+    margin: 0;
+  }
+  
+  .location {
+    color: gray;
+    font-size: 14px;
+    margin-top: 4px;
+  }
+  
+  .stats {
+    display: flex;
+    background-color: #D3D3D3;
+    border-top: 2px solid #808080;
+  }
+  
+  .stats li {
+    flex: 1;
+    padding: 12px 0;
+    border-right: 2px solid #808080;
+    list-style: none;
+  }
+  
+  .stats li:last-child {
+    border-right: none;
+  }
+  
+  .label {
+    display: block;
+    font-size: 14px;
+    color: #000000;
+  }
+  
+  .quantity {
+    font-weight: bold;
+    margin-top: 4px;
+  }
+  
+  @media (max-width: 360px) {
+    .profile {
+      max-width: 95vw;
+    }
+  
+    .avatar {
+      width: 80px;
+    }
+  
+    .name {
+      font-size: 18px;
+    }
+  
+    .tag,
+    .location {
+      font-size: 12px;
+    }
+  
+    .stats {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .stats li {
+      border-right: none;
+      border-bottom: 1px solid #ccc;
+      width: 100%;
+      text-align: center;
+    }
+  
+    .stats li:last-child {
+      border-bottom: none;
+    }
+  }
+  
